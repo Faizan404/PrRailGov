@@ -1,0 +1,48 @@
+body {
+    background-color: #003300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.image-container {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(144, 238, 144, 0.5), 0 0 40px rgba(144, 238, 144, 0.3), 0 0 60px rgba(144, 238, 144, 0.2);
+    animation: glow 2s infinite ease-in-out, pulse 3s infinite ease-in-out;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 20px rgba(144, 238, 144, 0.5), 0 0 40px rgba(144, 238, 144, 0.3), 0 0 60px rgba(144, 238, 144, 0.2);
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(144, 238, 144, 0.8), 0 0 50px rgba(144, 238, 144, 0.5), 0 0 70px rgba(144, 238, 144, 0.3);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(144, 238, 144, 0.5), 0 0 40px rgba(144, 238, 144, 0.3), 0 0 60px rgba(144, 238, 144, 0.2);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

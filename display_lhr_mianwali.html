@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LHR - Mianwali Schedules</title>
+    <link rel="stylesheet" href="display_style.css">
+</head>
+<body>
+    <h1><span id="page-title-text">Lahore - Mianwali Route Schedules</span> <span id="current-datetime" class="current-datetime-display"></span></h1>
+
+    <div class="display-container">
+        <section id="lhr-mianwali-departures-section" class="route-section departures-theme">
+            <h2><span class="en-text">LHR <span class="arrow">&rarr;</span> Mianwali (Departures)</span><span class="ur-text">لاہور - میانوالی روانگی</span></h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Train No</th>
+                            <th>Train Name</th>
+                            <th>Scheduled</th>
+                            <th>Expected</th>
+                            <th>Status</th>
+                            <th>Platform</th>
+                        </tr>
+                    </thead>
+                    <tbody id="lhr-mianwali-departures-body">
+                        <!-- Data will be populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="mianwali-lhr-arrivals-section" class="route-section arrivals-theme">
+            <h2><span class="en-text">Mianwali <span class="arrow">&rarr;</span> LHR (Arrivals)</span><span class="ur-text">میانوالی - لاہور آمد</span></h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Train No</th>
+                            <th>Train Name</th>
+                            <th>Scheduled</th>
+                            <th>Expected</th>
+                            <th>Status</th>
+                            <th>Platform</th>
+                        </tr>
+                    </thead>
+                    <tbody id="mianwali-lhr-arrivals-body">
+                        <!-- Data will be populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <script type="module" src="display_lhr_mianwali_script.js"></script>
+</body>
+</html>
