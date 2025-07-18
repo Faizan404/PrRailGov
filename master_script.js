@@ -34,8 +34,8 @@ const rwpLhrArrivalOptions = [
     { trainNo: "06 DN", trainName: "Green Line / گرین لائن", scheduledTime: "20:10" }, { trainNo: "104 DN", trainName: "Subak Kharam / سبک خرام", scheduledTime: "21:35" },
     { trainNo: "108 DN", trainName: "Islamabad Non Stop / اسلام آباد نان سٹاپ", scheduledTime: "22:30" }
 ];
-const lhrQtaDepartureOptions = [{ trainNo: "39 UP", trainName: "Jaffar Express / جعفر ایکسپریس", scheduledTime: "09:40" }];
-const qtaLhrArrivalOptions = [{ trainNo: "40 DN", trainName: "Jaffar Express / جعفر ایکسپریس", scheduledTime: "16:45" }];
+const lhrQtaDepartureOptions = [{ trainNo: "40 DN", trainName: "Jaffar Express / جعفر ایکسپریس", scheduledTime: "16:45" }];
+const qtaLhrArrivalOptions = [{ trainNo: "39 UP", trainName: "Jaffar Express / جعفر ایکسپریس", scheduledTime: "09:40" }];
 const lhrMianwaliDepartureOptions = [{ trainNo: "147 UP", trainName: "Mari Indux Express / ماڑی انڈس ایکسپریس", scheduledTime: "05:30" }];
 const mianwaliLhrArrivalOptions = [{ trainNo: "148 DN", trainName: "Mari Indux Express / ماڑی انڈس ایکسپریس", scheduledTime: "18:15" }];
 const lhrNwlDepartureOptions = [
