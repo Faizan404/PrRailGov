@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const arrivalsTableBody = document.getElementById('fsld-lhr-arrivals-body');
 
     const renderSchedules = async () => {
+        console.log("Hello")
         // Fetch schedules from Supabase
         const lhrFsldResult = await getSchedules('lhr_fsld_departure');
         const fsldLhrResult = await getSchedules('fsld_lhr_arrival');
