@@ -10,15 +10,14 @@ const lhrKcDepartureOptions = [
     { trainNo: "08 DN", trainName: "Tezgam Express / تیزگام ایکسپریس", scheduledTime: "13:45" }, { trainNo: "42 DN", trainName: "Karakarm Express / قراقرم ایکسپریس", scheduledTime: "15:00" },
     { trainNo: "34 DN", trainName: "Pak Business Express / پاک بزنس ایکسپریس", scheduledTime: "16:30" }, { trainNo: "16 DN", trainName: "Karachi Express / کراچی ایکسپریس", scheduledTime: "18:00" },
     { trainNo: "14 DN", trainName: "Awam Express / عوام ایکسپریس", scheduledTime: "18:30" }, { trainNo: "06 DN", trainName: "Green Line Express / گرین لائن ایکسپریس", scheduledTime: "20:50" },
-    { trainNo: "44 DN", trainName: "Shah hussain Express / شاہ حسین ایکسپریس", scheduledTime: "21:00" }
+    
 ];
 const kcLhrArrivalOptions = [
     { trainNo: "27 UP", trainName: "Shalimar Express / شالیمار ایکسپریس", scheduledTime: "02:55" }, { trainNo: "13 UP", trainName: "Awam Express / عوام ایکسپریس", scheduledTime: "07:25" },
     { trainNo: "41 UP", trainName: "Karakarm Express / قراقرم ایکسپریس", scheduledTime: "10:20" }, { trainNo: "33 UP", trainName: "Pak Business Express / پاک بزنس ایکسپریس", scheduledTime: "10:20" },
     { trainNo: "09 UP", trainName: "Allama Iqbal Express / علامہ اقبال ایکسپریس", scheduledTime: "12:30" }, { trainNo: "15 UP", trainName: "Karachi Express / کراچی ایکسپریس", scheduledTime: "13:00" },
     { trainNo: "07 UP", trainName: "Tezgam Express / تیزگام ایکسپریس", scheduledTime: "14:00" }, { trainNo: "05_UP", trainName: "Green Line Express / گرین لائن ایکسپریس", scheduledTime: "15:35" },
-    { trainNo: "43 UP", trainName: "Shah Hussain Express / شاہ حسین ایکسپریس", scheduledTime: "15:35" }, { trainNo: "01 UP", trainName: "Khyber Mail / خیبر میل", scheduledTime: "20:30" },
-    { trainNo: "37 UP", trainName: "Fareed Express / فرید ایکسپریس", scheduledTime: "22:00" }
+    { trainNo: "01 UP", trainName: "Khyber Mail / خیبر میل", scheduledTime: "20:30" },{ trainNo: "37 UP", trainName: "Fareed Express / فرید ایکسپریس", scheduledTime: "22:00" }
 ];
 const lhrRwpDepartureOptions = [
     { trainNo: "105 UP", trainName: "Rawal Express / راول ایکسپریس", scheduledTime: "00:30" }, { trainNo: "101UP", trainName: "Subak Rafftar Express / سبک رفتار ایکسپریس", scheduledTime: "07:00" },
@@ -50,9 +49,11 @@ const nwlLhrArrivalOptions = [
 ];
 const lhrFsldDepartureOptions = [
     { trainNo: "112 DN", trainName: "Baddar Express / بدر ایکسپریس", scheduledTime: "09:30" }, { trainNo: "114 DN", trainName: "Ghuri Express / غوری ایکسپریس", scheduledTime: "19:00" }
+    { trainNo: "44 DN", trainName: "Shah hussain Express / شاہ حسین ایکسپریس", scheduledTime: "21:00" }
 ];
 const fsldLhrArrivalOptions = [
     { trainNo: "111_UP", trainName: "Baddar Express / بدر ایکسپریس", scheduledTime: "08:35" }, { trainNo: "113_UP", trainName: "Ghuri Express / غوری ایکسپریس", scheduledTime: "18:10" }
+     { trainNo: "43 UP", trainName: "Shah Hussain Express / شاہ حسین ایکسپریس", scheduledTime: "15:35" }
 ];
 const lhrPshDepartureOptions = [
     { trainNo: "13 UP", trainName: "Awam Express / عوام ایکسپریس", scheduledTime: "08:00" }, { trainNo: "39 UP", trainName: "Jaffar Express / جعفر ایکسپریس", scheduledTime: "10:15" },
