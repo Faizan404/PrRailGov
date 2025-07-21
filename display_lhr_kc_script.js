@@ -44,6 +44,10 @@ document.addEventListener('DOMContentLoaded', async () => {
             statusCell.classList.add('animated-status'); // This class will be combined with .departures-theme or .arrivals-theme by CSS
 
             row.insertCell().textContent = item.platform;
+            
+            if (item.status === 'Arrived' || item.status === 'Departed' || item.status === 'Cancelled') {
+                row.classList.add('status-highlight');
+            }
         });
     };
 
