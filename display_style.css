@@ -217,6 +217,10 @@ tbody tr:last-child td {
 .arrivals-theme .remove-btn { background-color: #ff7777; color: #330000; } 
 .arrivals-theme .remove-btn:hover { background-color: #ff5555; transform: translateY(-1px); }
 
+.status-highlight td {
+    background-color: red !important;
+}
+
 /* Footer Styling */
 .footer {
     text-align: center;
