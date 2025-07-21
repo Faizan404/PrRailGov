@@ -44,6 +44,10 @@ document.addEventListener('DOMContentLoaded', async () => {
             statusCell.classList.add('animated-status');
             
             row.insertCell().textContent = item.platform;
+            
+            if (item.status === 'Arrived' || item.status === 'Departed' || item.status === 'Cancelled') {
+                row.classList.add('status-highlight');
+            }
         });
     };
 
