@@ -32,7 +32,7 @@ img {
 
 .welcome-text p {
     margin: 0;
-    font-size: 5.0em;
+    font-size: 10.0em;
     font-weight: bold;
     animation: color-change 5s infinite;
     font-family: 'Times New Roman', Times, serif;
