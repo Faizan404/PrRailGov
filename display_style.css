@@ -2,7 +2,7 @@ html, body {
     height: 100%; /* Ensure body can fill the viewport height */
 }
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Times New Roman', Times, serif;
     margin: 0;
     padding: 20px;
     color: #f0f0f0; /* Light text for dark themes */
