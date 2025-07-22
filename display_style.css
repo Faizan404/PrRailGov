@@ -11,6 +11,7 @@ body {
     background-color: #000000; /* Shine Black Background */
     padding-bottom: 60px; /* Add padding to the bottom of the body to make space for the footer */
     animation: slideIn 1s ease-in-out;
+    overflow: hidden;
 }
 
 @keyframes slideIn {
@@ -83,7 +84,7 @@ h1 { /* General H1 for the page title, not inside a theme */
 }
 
 .route-section h2 {
-    font-size: 2em; /* Large section headings */
+    font-size: 2.5em; /* Large section headings */
     margin-top: 0;
     margin-bottom: 20px;
     padding-bottom: 10px;
@@ -91,6 +92,7 @@ h1 { /* General H1 for the page title, not inside a theme */
     display: flex;
     justify-content: space-between; 
     align-items: center;
+    color: yellow;
 }
 
 .en-text {
@@ -117,21 +119,36 @@ table {
     width: 100%;
     border-collapse: collapse;
     font-size: 1.1em; 
+    border: 4px solid #ccc;
 }
-
-th, td {
+th {
     padding: 12px 15px; 
     text-align: left;
     vertical-align: middle;
-    border-bottom-width: 2px;
-    border-bottom-style: solid;
+    border: 4px solid #ccc;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.8em;
+    color: yellow;
+    text-shadow: 1px 1px 1px #000;
+    white-space: nowrap;
+}
+
+td {
+    padding: 12px 15px; 
+    text-align: left;
+    vertical-align: middle;
+    /*border-bottom-width: 2px;
+    border-bottom-style: solid;*/
+    border: 4px solid #ccc;
+    font-weight: bold;
+    font-size: 2em;
+     color: yellow;
+    text-shadow: 1px 1px 1px #000;
 }
 
 thead th {
     font-weight: 600; 
-    font-size: 1.2em;
+    /*font-size: 1.2em;*/
     white-space: nowrap; 
     position: sticky; 
     top: 0; 
@@ -152,11 +169,13 @@ tbody tr:last-child td {
 }
 .departures-theme thead th {
     background-color: #004d00; 
-    color: #b0ffb0; 
+    /*color: #b0ffb0;*/
+    color: yellow; 
 }
 .departures-theme th, .departures-theme td {
     border-color: #006d00; 
-    color: #e6ffe6; 
+    /*color: #e6ffe6;*/ 
+    color: yellow; 
 }
 .departures-theme tbody tr:nth-child(even) {
     background-color: #005500; 
@@ -190,11 +209,13 @@ tbody tr:last-child td {
 }
 .arrivals-theme thead th {
     background-color: #003366; 
-    color: #cceeff; 
+    /*color: #cceeff; */
+    color: yellow; 
 }
 .arrivals-theme th, .arrivals-theme td {
     border-color: #0055aa; 
-    color: #e0f7ff; 
+    /*color: #e0f7ff; */
+    color: yellow; 
 }
 .arrivals-theme tbody tr:nth-child(even) {
     background-color: #004077; 
