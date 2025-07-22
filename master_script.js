@@ -46,11 +46,11 @@ const nwlLhrArrivalOptions = [
     { trainNo: "172 DN", trainName: "سیالکوٹ ایکسپریس", scheduledTime: "21:50" }
 ];
 const lhrFsldDepartureOptions = [
-    { trainNo: "112 DN", trainName: "بدر ایکسپریس", scheduledTime: "09:30" }, 
+    { trainNo: "112 DN", trainName: "بدر ایکسپریس", scheduledTime: "09:30" }, { trainNo: "122 DN", trainName: "راوی ایکسپریس", scheduledTime: "02:15" }, 
     { trainNo: "114 DN", trainName: "غوری ایکسپریس", scheduledTime: "19:00" },{ trainNo: "148 DN", trainName: "ماڑی انڈس ایکسپریس", scheduledTime: "21:10" }
 ];
 const fsldLhrArrivalOptions = [
-    { trainNo: "111_UP", trainName: "بدر ایکسپریس", scheduledTime: "08:35" },
+    { trainNo: "111_UP", trainName: "بدر ایکسپریس", scheduledTime: "08:35" },{ trainNo: "121 DN", trainName: "راوی ایکسپریس", scheduledTime: "08:55" },
      { trainNo: "113_UP", trainName: "غوری ایکسپریس", scheduledTime: "18:10" },{ trainNo: "147 UP", trainName: "ماڑی انڈس ایکسپریس", scheduledTime: "05:30" }
 ];
 const lhrPshDepartureOptions = [
