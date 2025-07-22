@@ -65,11 +65,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Automatic Page Cycling
     const pageSequence = [ // Defines the order of pages for automatic cycling
         'display_lhr_kc.html', 
+        'display_lhr_mianwali.html', 
         'display_lhr_psh.html', 
         'display_lhr_fsld.html', 
         'display_lhr_rwp.html', 
         'display_lhr_nwl.html', 
-        'display_lhr_mianwali.html', 
         'display_lhr_qta.html',
         'image_display.html'
     ];
