@@ -217,30 +217,6 @@
         .data-table-wrapper .remove-btn { background-color: #d9534f; } /* Danger red */
         .data-table-wrapper .remove-btn:hover { background-color: #c9302c; }
 
-        /* Latest Entry Styling */
-        .latest-entry {
-            margin-top: 15px;
-            padding: 12px;
-            border-radius: 6px;
-            background-color: rgba(255, 255, 255, 0.1);
-            border-left: 4px solid #27ae60;
-            animation: fadeIn 0.5s;
-        }
-        .latest-entry h4 {
-            margin-top: 0;
-            margin-bottom: 8px;
-            color: #2ecc71;
-            font-size: 0.95em;
-        }
-        .latest-entry p {
-            margin: 5px 0;
-            font-size: 0.9em;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
     </style>
 </head>
 <body>
@@ -262,7 +238,7 @@
     <div class="forms-container">
         <!-- LHR-KC Departure -->
         <section class="form-section form-section-lhr-kc">
-            <h2>LHR - KC (Departure) / لاہور - کراچی روانگی</h2>
+            <h2>LHR - KC-I (Departure) / لاہور - کراچی روانگی</h2>
             <form id="form-lhr-kc-dep">
                 <div><label for="lhr-kc-dep-trainNo">Train No:</label><select id="lhr-kc-dep-trainNo" required><option value="">-- Select Train No --</option></select></div>
                 <div><label>Train Name:</label><span id="lhr-kc-dep-trainName-display" class="auto-display-field">-</span></div>
@@ -282,7 +258,7 @@
 
         <!-- KC-LHR Arrival -->
         <section class="form-section form-section-kc-lhr">
-            <h2>KC - LHR (Arrival) / کراچی - لاہور آمد</h2>
+            <h2>KC - LHR -I (Arrival) / کراچی - لاہور- آمد</h2>
             <form id="form-kc-lhr-arr">
                 <div><label for="kc-lhr-arr-trainNo">Train No:</label><select id="kc-lhr-arr-trainNo" required><option value="">-- Select Train No --</option></select></div>
                 <div><label>Train Name:</label><span id="kc-lhr-arr-trainName-display" class="auto-display-field">-</span></div>
@@ -298,6 +274,45 @@
                 </div>
             </form>
             <div id="table-data-kc-lhr-arr" class="data-table-wrapper"></div>
+        </section>
+    <!-- LHR-Mianwali Departure -->
+        <section class="form-section form-section-lhr-mianwali">
+             <h2>LHR - KC-II (Departure) / لاہور - کراچی روانگی</h2>
+            <form id="form-lhr-mianwali-dep">
+                <div><label for="lhr-mianwali-dep-trainNo">Train No:</label><select id="lhr-mianwali-dep-trainNo" required><option value="">-- Select Train No --</option></select></div>
+                <div><label>Train Name:</label><span id="lhr-mianwali-dep-trainName-display" class="auto-display-field">-</span></div>
+                <div><label>Scheduled Time:</label><span id="lhr-mianwali-dep-scheduledTime-display" class="auto-display-field">-</span></div>
+                <input type="hidden" id="lhr-mianwali-dep-hidden-trainName" name="hiddenTrainName">
+                <input type="hidden" id="lhr-mianwali-dep-hidden-scheduledTime" name="hiddenScheduledTime">
+                <div><label for="lhr-mianwali-dep-expectedTime">Expected Time:</label><input type="time" id="lhr-mianwali-dep-expectedTime"></div>
+                <div><label for="lhr-mianwali-dep-status">Status:</label><select id="lhr-mianwali-dep-status"><option value="On Time">On Time</option><option value="Late">Late</option><option value="Before">Before</option><option value="Cancelled">Cancelled</option><option value="Departed">Departed</option></select></div>
+                <div><label for="lhr-mianwali-dep-platformNo">Platform No:</label><input type="text" id="lhr-mianwali-dep-platformNo"></div>
+                <div class="form-buttons">
+                    <button type="submit">Add LHR-Mianwali Departure</button>
+                    <button type="button" class="cancel-edit-btn" style="display:none;">Cancel Edit</button>
+                </div>
+            </form>
+            <div id="table-data-lhr-mianwali-dep" class="data-table-wrapper"></div>
+        </section>
+
+        <!-- Mianwali-LHR Arrival -->
+        <section class="form-section form-section-mianwali-lhr">
+             <h2>KC - LHR -II (Arrival) / کراچی - لاہور- آمد</h2>
+            <form id="form-mianwali-lhr-arr">
+                <div><label for="mianwali-lhr-arr-trainNo">Train No:</label><select id="mianwali-lhr-arr-trainNo" required><option value="">-- Select Train No --</option></select></div>
+                <div><label>Train Name:</label><span id="mianwali-lhr-arr-trainName-display" class="auto-display-field">-</span></div>
+                <div><label>Scheduled Time:</label><span id="mianwali-lhr-arr-scheduledTime-display" class="auto-display-field">-</span></div>
+                <input type="hidden" id="mianwali-lhr-arr-hidden-trainName" name="hiddenTrainName">
+                <input type="hidden" id="mianwali-lhr-arr-hidden-scheduledTime" name="hiddenScheduledTime">
+                <div><label for="mianwali-lhr-arr-expectedTime">Expected Time:</label><input type="time" id="mianwali-lhr-arr-expectedTime"></div>
+                <div><label for="mianwali-lhr-arr-status">Status:</label><select id="mianwali-lhr-arr-status"><option value="On Time">On Time</option><option value="Late">Late</option><option value="Before">Before</option><option value="Cancelled">Cancelled</option><option value="Arrived">Arrived</option></select></div>
+                <div><label for="mianwali-lhr-arr-platformNo">Platform No:</label><input type="text" id="mianwali-lhr-arr-platformNo"></div>
+                <div class="form-buttons">
+                    <button type="submit">Add Mianwali-LHR Arrival</button>
+                    <button type="button" class="cancel-edit-btn" style="display:none;">Cancel Edit</button>
+                </div>
+            </form>
+            <div id="table-data-mianwali-lhr-arr" class="data-table-wrapper"></div>
         </section>
 
         <!-- LHR-PSH Departure -->
@@ -342,7 +357,7 @@
 
         <!-- LHR-FSLD Departure -->
         <section class="form-section form-section-lhr-fsld">
-            <h2>LHR - FSLD (Departure) / لاہور - فیصل آباد روانگی</h2>
+            <h2>LHR - FSLD- Mianwali-SKO (Departure) / لاہور - فیصل آباد- میانوالی-شورکوٹ روانگی</h2>
             <form id="form-lhr-fsld-dep">
                 <div><label for="lhr-fsld-dep-trainNo">Train No:</label><select id="lhr-fsld-dep-trainNo" required><option value="">-- Select Train No --</option></select></div>
                 <div><label>Train Name:</label><span id="lhr-fsld-dep-trainName-display" class="auto-display-field">-</span></div>
@@ -362,7 +377,7 @@
 
         <!-- FSLD-LHR Arrival -->
         <section class="form-section form-section-fsld-lhr">
-            <h2>FSLD - LHR (Arrival) / فیصل آباد - لاہور آمد</h2>
+            <h2>SKO-FSLD-Mianwali-LHR (Arrival) / -شورکوٹ میانوالی فیصل آباداہور</h2>
             <form id="form-fsld-lhr-arr">
                 <div><label for="fsld-lhr-arr-trainNo">Train No:</label><select id="fsld-lhr-arr-trainNo" required><option value="">-- Select Train No --</option></select></div>
                 <div><label>Train Name:</label><span id="fsld-lhr-arr-trainName-display" class="auto-display-field">-</span></div>
@@ -460,46 +475,7 @@
             <div id="table-data-rwp-lhr-arr" class="data-table-wrapper"></div>
         </section>
 
-        <!-- LHR-Mianwali Departure -->
-        <section class="form-section form-section-lhr-mianwali">
-            <h2>LHR - Mianwali (Departure) / لاہور - میانوالی روانگی</h2>
-            <form id="form-lhr-mianwali-dep">
-                <div><label for="lhr-mianwali-dep-trainNo">Train No:</label><select id="lhr-mianwali-dep-trainNo" required><option value="">-- Select Train No --</option></select></div>
-                <div><label>Train Name:</label><span id="lhr-mianwali-dep-trainName-display" class="auto-display-field">-</span></div>
-                <div><label>Scheduled Time:</label><span id="lhr-mianwali-dep-scheduledTime-display" class="auto-display-field">-</span></div>
-                <input type="hidden" id="lhr-mianwali-dep-hidden-trainName" name="hiddenTrainName">
-                <input type="hidden" id="lhr-mianwali-dep-hidden-scheduledTime" name="hiddenScheduledTime">
-                <div><label for="lhr-mianwali-dep-expectedTime">Expected Time:</label><input type="time" id="lhr-mianwali-dep-expectedTime"></div>
-                <div><label for="lhr-mianwali-dep-status">Status:</label><select id="lhr-mianwali-dep-status"><option value="On Time">On Time</option><option value="Late">Late</option><option value="Before">Before</option><option value="Cancelled">Cancelled</option><option value="Departed">Departed</option></select></div>
-                <div><label for="lhr-mianwali-dep-platformNo">Platform No:</label><input type="text" id="lhr-mianwali-dep-platformNo"></div>
-                <div class="form-buttons">
-                    <button type="submit">Add LHR-Mianwali Departure</button>
-                    <button type="button" class="cancel-edit-btn" style="display:none;">Cancel Edit</button>
-                </div>
-            </form>
-            <div id="table-data-lhr-mianwali-dep" class="data-table-wrapper"></div>
-        </section>
-
-        <!-- Mianwali-LHR Arrival -->
-        <section class="form-section form-section-mianwali-lhr">
-            <h2>Mianwali - LHR (Arrival) / میانوالی - لاہور آمد</h2>
-            <form id="form-mianwali-lhr-arr">
-                <div><label for="mianwali-lhr-arr-trainNo">Train No:</label><select id="mianwali-lhr-arr-trainNo" required><option value="">-- Select Train No --</option></select></div>
-                <div><label>Train Name:</label><span id="mianwali-lhr-arr-trainName-display" class="auto-display-field">-</span></div>
-                <div><label>Scheduled Time:</label><span id="mianwali-lhr-arr-scheduledTime-display" class="auto-display-field">-</span></div>
-                <input type="hidden" id="mianwali-lhr-arr-hidden-trainName" name="hiddenTrainName">
-                <input type="hidden" id="mianwali-lhr-arr-hidden-scheduledTime" name="hiddenScheduledTime">
-                <div><label for="mianwali-lhr-arr-expectedTime">Expected Time:</label><input type="time" id="mianwali-lhr-arr-expectedTime"></div>
-                <div><label for="mianwali-lhr-arr-status">Status:</label><select id="mianwali-lhr-arr-status"><option value="On Time">On Time</option><option value="Late">Late</option><option value="Before">Before</option><option value="Cancelled">Cancelled</option><option value="Arrived">Arrived</option></select></div>
-                <div><label for="mianwali-lhr-arr-platformNo">Platform No:</label><input type="text" id="mianwali-lhr-arr-platformNo"></div>
-                <div class="form-buttons">
-                    <button type="submit">Add Mianwali-LHR Arrival</button>
-                    <button type="button" class="cancel-edit-btn" style="display:none;">Cancel Edit</button>
-                </div>
-            </form>
-            <div id="table-data-mianwali-lhr-arr" class="data-table-wrapper"></div>
-        </section>
-
+    
         <!-- LHR-QTA Departure -->
         <section class="form-section form-section-lhr-qta">
             <h2>LHR - QTA (Departure) / لاہور - کوئٹہ روانگی</h2>
@@ -543,6 +519,6 @@
     </div> <!-- .forms-container -->
 
     <div class="footer">Developed for Pakistan Railways by M.A Khan</div>
-    <script type="module" src="./master_script.js"></script>
+    <script src="master_script.js"></script>
 </body>
 </html>
