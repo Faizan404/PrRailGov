@@ -30,6 +30,9 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         dataArray.forEach((item) => {
             const row = tableBody.insertRow();
+            if (item.status) {
+                row.classList.add(`status-${item.status.toLowerCase().replace(/ /g, '-')}-row`);
+            }
             row.insertCell().textContent = item.train_number;
             
             const trainNameCell = row.insertCell();
@@ -42,7 +45,10 @@ document.addEventListener('DOMContentLoaded', async () => {
             const statusCell = row.insertCell();
             statusCell.textContent = item.status;
             statusCell.classList.add('animated-status');
-            
+            if (item.status) {
+                statusCell.classList.add(`status-${item.status.toLowerCase().replace(/ /g, '-')}`);
+            }
+
             row.insertCell().textContent = item.platform;
             
             if (item.status === 'Arrived' || item.status === 'Departed' || item.status === 'Cancelled') {
