@@ -30,6 +30,9 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         dataArray.forEach((item) => {
             const row = tableBody.insertRow();
+            if (item.status) {
+                row.classList.add(`status-${item.status.toLowerCase().replace(/ /g, '-')}-row`);
+            }
             row.insertCell().textContent = item.train_number;
             
             const trainNameCell = row.insertCell();
