@@ -221,7 +221,13 @@ tbody tr:last-child td {
 .status-highlight td {
     background-color: red !important;
 }
-
+/* General Status Styles */
+.status-on-time { color: #2ecc71; } /* Emerald Green */
+.status-late { color: #e74c3c; } /* Alizarin Red */
+.status-before { color: #3498db; } /* Peter River Blue */
+.status-cancelled-row td { color: red !important; } /* Red */
+.status-departed-row td { color: red !important; } /* Red */
+.status-arrived-row td { color: red !important; } /* Red */
 /* Footer Styling */
 .footer {
     text-align: center;
