@@ -218,8 +218,8 @@ tbody tr:last-child td {
 .arrivals-theme .remove-btn { background-color: #ff7777; color: #330000; } 
 .arrivals-theme .remove-btn:hover { background-color: #ff5555; transform: translateY(-1px); }
 
-.status-highlight td {
-    background-color: red !important;
+/*.status-highlight td {
+    background-color: red !important;*/
 }
 /* General Status Styles */
 .status-on-time { color: #2ecc71; } /* Emerald Green */
