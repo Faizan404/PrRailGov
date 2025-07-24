@@ -27,6 +27,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         dataArray.forEach((item, index) => {
             const row = tableBody.insertRow();
+            if (item.status) {
+                row.classList.add(`status-${item.status.toLowerCase().replace(/ /g, '-')}-row`);
+            }
             row.insertCell().textContent = item.trainNo;
 
             const trainNameCell = row.insertCell();
