@@ -51,8 +51,9 @@
             box-sizing: border-box;
             font-size: 1em;
         }
-       /* .login-container button[type="submit"] */
-        .login-container button {
+       .login-container button[type="submit"]
+        /*.login-container button */
+        {
             background-color: #5cb85c; /* Bright Green Button */
             color: #003300; /* Dark text for contrast */
             font-weight: bold;
@@ -64,8 +65,8 @@
             width: 100%;
             transition: background-color 0.2s ease;
         }
-        /*.login-container button[type="submit"]:hover*/
-         .login-container button:hover {
+        .login-container button[type="submit"]:hover
+        /* .login-container button:hover*/
         {
             background-color: #4cae4c; /* Darker green on hover */
         }
@@ -104,6 +105,7 @@
         <img src="./logo.png" alt="Logo" class="login-logo">
         <h1>Master Input Login</h1>
         <form id="login-form">
+             <div class="footer">Developed for Pakistan Railways by M.A Khan</div>
             <div>
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" required>
@@ -117,7 +119,7 @@
         </form>
         <div id="error-message"></div>
     </div>
-    <div class="footer">Developed for Pakistan Railways by M.A Khan</div>
+   
     <script type="module" src="login_script.js"></script>
 </body>
 </html>
