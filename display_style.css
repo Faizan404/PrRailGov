@@ -83,7 +83,7 @@ h1 { /* General H1 for the page title, not inside a theme */
 }
 
 .route-section h2 {
-    font-size: 2em; /* Large section headings */
+    font-size: 2.8em; /* Large section headings */
     margin-top: 0;
     margin-bottom: 20px;
     padding-bottom: 10px;
