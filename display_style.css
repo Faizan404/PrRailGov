@@ -33,7 +33,7 @@ body {
 
 h1 { /* General H1 for the page title, not inside a theme */
     text-align: center;
-    font-size: 2.8em; /* Large main heading */
+    font-size: 2.0em; /* Large main heading */
     margin-bottom: 30px;
     font-weight: 600;
     color: yellow; /* Changed to yellow */
@@ -169,7 +169,7 @@ tbody tr:last-child td {
     color: #003300; 
     border: none;
     padding: 6px 10px;
-    font-size: 2.0em;
+    font-size: 0.9em;
     border-radius: 4px;
     cursor: pointer;
     margin: 0 3px;
