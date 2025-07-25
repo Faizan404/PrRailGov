@@ -51,7 +51,8 @@
             box-sizing: border-box;
             font-size: 1em;
         }
-        .login-container button[type="submit"] {
+       /* .login-container button[type="submit"] */
+        .login-container button {
             background-color: #5cb85c; /* Bright Green Button */
             color: #003300; /* Dark text for contrast */
             font-weight: bold;
@@ -63,7 +64,9 @@
             width: 100%;
             transition: background-color 0.2s ease;
         }
-        .login-container button[type="submit"]:hover {
+        /*.login-container button[type="submit"]:hover*/
+         .login-container button:hover {
+        {
             background-color: #4cae4c; /* Darker green on hover */
         }
         #error-message {
@@ -110,6 +113,7 @@
                 <input type="password" id="password" name="password" required>
             </div>
             <button type="submit">Login</button>
+             <button type="button" id="guest-login-btn" style="margin-top: 10px;">ٹرینوں کی آمد اور روانگی کے لیے کلک کریں</button>
         </form>
         <div id="error-message"></div>
     </div>
